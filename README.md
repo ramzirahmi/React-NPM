@@ -1,7 +1,8 @@
-npm install -g create-react-app
-create-react-app myapp-react
-cd myapp-react
-npm start
+Install nodejs
+1/ npm install -g create-react-app 
+2/create-react-app myapp-react
+3/cd myapp-react
+4/npm start
 
 # Getting Started with Create React App
 
