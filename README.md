@@ -1,3 +1,8 @@
+npm install -g create-react-app
+create-react-app myapp-react
+cd myapp-react
+npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
