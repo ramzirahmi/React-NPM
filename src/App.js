@@ -8,6 +8,9 @@ import { test } from "./module";
 import test2 from "./module";
 import Child from "./Component/Child";
 function App() {
+  function handleClick() {
+    console.log("Button clicked!");
+  }
   return (
     <div>
       <h1>Welcome to react {x}</h1>
@@ -15,6 +18,7 @@ function App() {
       <button onClick={test}>Click me to test</button>
       <button onClick={test2}>Click me to test2</button>
       <Child />
+      <button onClick={handleClick}>handleClick btn</button>
     </div>
   );
 }
