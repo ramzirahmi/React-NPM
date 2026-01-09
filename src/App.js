@@ -6,6 +6,7 @@ import { x, y } from "./module";
 import { test } from "./module";
 // import default function test2 from module.js
 import test2 from "./module";
+import Child from "./Component/Child";
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
       <h1>Welcome to react {x + y}</h1>
       <button onClick={test}>Click me to test</button>
       <button onClick={test2}>Click me to test2</button>
+      <Child />
     </div>
   );
 }
