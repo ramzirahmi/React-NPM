@@ -1,13 +1,15 @@
 function Listitem({ ville }) {
   return (
-    <div>
+    <>
+      {" "}
       {ville.map((itemvile, index) => (
-        <>
-          <p key={index}>{itemvile.name}</p>
-          <p key={index}>{itemvile.surface} km</p>
-        </>
+        <div key={index}>
+          <p>{itemvile.name}</p>
+          <p>{itemvile.surface} km</p>
+          <p>----------------------</p>
+        </div>
       ))}
-    </div>
+    </>
   );
 }
 

@@ -32,7 +32,7 @@ function App() {
     console.log("Button clicked!");
   }
   return (
-    <div>
+    <>
       <Listitem ville={villes} />
       <h1>Welcome to react {x}</h1>
       <h1>Welcome to react {x + y}</h1>
@@ -44,7 +44,7 @@ function App() {
 
       <p>{person.name}</p>
       <p>{person.age}</p>
-    </div>
+    </>
   );
 }
 
