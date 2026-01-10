@@ -10,7 +10,12 @@ function Form() {
   return (
     <div>
       <form onSubmit={(e) => e.preventDefault()}>
-        <textarea type="text" onChange={handleChange} />
+        <select onChange={handleChange}>
+          <option value="alex">alex</option>
+          <option value="Alice">Alice</option>
+          <option value="Bob">Bob</option>
+          <option value="Charlie">Charlie</option>
+        </select>
         <input type="submit" value="Send" />
       </form>
       <p>{name}</p>
