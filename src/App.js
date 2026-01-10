@@ -9,6 +9,7 @@ import { test } from "./module";
 import test2 from "./module";
 import Child from "./Components/Child";
 import Listitem from "./Components/Listitem";
+import Form from "./Components/Form";
 
 function App() {
   const [person, setPerson] = useState({
@@ -41,9 +42,9 @@ function App() {
       <Child />
       <button onClick={handleClick}>handleClick btn</button>
       <button onClick={changeName}>ChangeName</button>
-
       <p>{person.name}</p>
       <p>{person.age}</p>
+      <Form />
     </>
   );
 }
