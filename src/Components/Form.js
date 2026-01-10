@@ -10,8 +10,8 @@ function Form() {
   return (
     <div>
       <form onSubmit={(e) => e.preventDefault()}>
-        <input type="text" onChange={handleChange} />
-        <button type="submit">submit</button>
+        <textarea type="text" onChange={handleChange} />
+        <input type="submit" value="Send" />
       </form>
       <p>{name}</p>
     </div>
