@@ -1,0 +1,9 @@
+.item:nth-child(even) {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.item:nth-child(odd) {
+  background-color: #490404;
+  color: rgb(246, 235, 235);
+}

@@ -1,3 +1,4 @@
+import "./Listitem.css";
 function Listitem({ ville }) {
   return (
     <>
@@ -5,7 +6,7 @@ function Listitem({ ville }) {
         (itemville, index) =>
           // If Condition
           itemville.surface > 50 && (
-            <div key={index}>
+            <div className="item" key={index}>
               <p>{itemville.name}</p>
               <p>{itemville.surface} km</p>
               <p>----------------------</p>
