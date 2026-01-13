@@ -1,4 +1,6 @@
 import "./Nav.css";
+// page not reloading on navigation - use Link or NavLink
+import { Link, NavLink } from "react-router-dom";
 function Nav() {
   return (
     <div className="navbar">
@@ -6,10 +8,13 @@ function Nav() {
         <a className="logo">logo</a>
         <ul>
           <li>
-            <a href="/">Home</a>
+            // Use NavLink to apply active class
+            <NavLink exact to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="/about">About</a>
+            <NavLink to="/about">About</NavLink>
           </li>
         </ul>
       </div>
