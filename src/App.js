@@ -1,5 +1,9 @@
 import logo from "./logo.svg";
 import { useState } from "react";
+// npm install react-router-dom
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import About from "./Components/About";
 import "./App.css";
 // Importing x and y from module.js
 import { x, y } from "./module";
@@ -10,6 +14,7 @@ import test2 from "./module";
 import Child from "./Components/Child";
 import Listitem from "./Components/Listitem";
 import Form from "./Components/Form";
+import Nav from "./Components/Nav";
 
 function App() {
   const [person, setPerson] = useState({
@@ -34,6 +39,15 @@ function App() {
   }
   return (
     <>
+      <BrowserRouter>
+        <Nav />
+
+        {/* ✅ OBLIGATOIRE en v6 */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
       <Listitem ville={villes} />
       <h1>Welcome to react {x}</h1>
       <h1>Welcome to react {x + y}</h1>

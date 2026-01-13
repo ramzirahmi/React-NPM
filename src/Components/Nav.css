@@ -1,0 +1,27 @@
+.navbar {
+  background-color: aqua;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #b61f1f;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin: 0 15px;
+}
+ul li a {
+  text-decoration: none;
+  color: #b61f1f;
+  font-size: 22px;
+  font-weight: bold;
+}
