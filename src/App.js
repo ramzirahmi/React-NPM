@@ -4,6 +4,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
+import Blog from "./Components/Blog";
 import "./App.css";
 // Importing x and y from module.js
 import { x, y } from "./module";
@@ -46,6 +47,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
       <Listitem ville={villes} />

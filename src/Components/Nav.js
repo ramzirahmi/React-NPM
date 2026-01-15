@@ -8,13 +8,16 @@ function Nav() {
         <a className="logo">logo</a>
         <ul>
           <li>
-            // Use NavLink to apply active class
+            {/* Use NavLink to apply active class */}
             <NavLink exact to="/">
               Home
             </NavLink>
           </li>
           <li>
             <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/blog">Blog</NavLink>
           </li>
         </ul>
       </div>

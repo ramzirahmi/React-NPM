@@ -1,8 +1,10 @@
 Install nodejs
-1/ npm install -g create-react-app 
+1/ npm install -g create-react-app
 2/create-react-app myapp-react
 3/cd myapp-react
 4/npm start
+
+install => npm install axios
 
 # Getting Started with Create React App
 
