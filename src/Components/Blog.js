@@ -21,9 +21,18 @@ function Blog() {
 
       <div>
         {users.map((user) => (
-          <p key={user.id}>
-            {user.name} and email is {user.email}
-          </p>
+          <div
+            key={user.id}
+            style={{
+              background: "#ddd",
+              border: "1px solid black",
+              margin: "10px",
+              padding: "10px",
+            }}
+          >
+            <p>Name: {user.name}</p>
+            <p>Email: {user.email}</p>
+          </div>
         ))}
       </div>
     </div>

@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import theimg from "./img.jpg";
 import { useState } from "react";
 // npm install react-router-dom
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -61,6 +62,7 @@ function App() {
       <p>{person.name}</p>
       <p>{person.age}</p>
       <Form />
+      <img src={theimg} alt="img" style={{ width: "200px" }} />
     </>
   );
 }
