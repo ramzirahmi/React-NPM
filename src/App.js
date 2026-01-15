@@ -3,6 +3,7 @@ import theimg from "./img.jpg";
 import { useState } from "react";
 // npm install react-router-dom
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Style from "./Styles.module.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Blog from "./Components/Blog";
@@ -52,7 +53,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Listitem ville={villes} />
-      <h1>Welcome to react {x}</h1>
+      <h1 className={Style.title}>Welcome to react {x}</h1>
       <h1>Welcome to react {x + y}</h1>
       <button onClick={test}>Click me to test</button>
       <button onClick={test2}>Click me to test2</button>
